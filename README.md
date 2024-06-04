@@ -52,6 +52,25 @@ La chaîne de télévision internationale MovieSeriesTV a sollicité la startup 
     - **Critères d'acceptation** : La liste affiche tous les films avec les détails mentionnés. Les films peuvent être triés par différents critères (titre, date de sortie, note).
 - **Voir les Détails d'un Film ou une série** : En tant qu'utilisateur, je veux pouvoir cliquer sur un film ou une série pour voir ses détails complets, y compris la liste des acteurs et une bande-annonce (si disponible), afin d'obtenir des informations plus approfondies sur le film.
     - **Critères d'acceptation** : Un clic sur un film affiche une page de détails avec toutes les informations pertinentes. Les acteurs et la bande-annonce (si disponible) sont inclus dans les détails.
+ 
+##  la conception UML
+
+
+### diagramme de classe
+
+<img width="551" alt="Daigrame de class" src="https://github.com/ilyashaqyqy/MovieSeriesApp/assets/157011241/15148fb4-8b33-4482-b709-129e3b6fbe61">
+
+### use case
+
+<img width="386" alt="UseCase" src="https://github.com/ilyashaqyqy/MovieSeriesApp/assets/157011241/a39fc4cc-1c98-4bec-8480-982cf0ee657d">
+
+### diagramme de sequence
+
+<img width="323" alt="dSeqaunce" src="https://github.com/ilyashaqyqy/MovieSeriesApp/assets/157011241/34243ac2-d556-4c63-a952-7c18c622ef06">
+                                                    
+
+<img width="331" alt="dSeqaunce2" src="https://github.com/ilyashaqyqy/MovieSeriesApp/assets/157011241/f8b25699-f5f0-4bff-9305-b54b9c5056b1">
+
 
 ## Technologies Utilisées
 - **Spring Core** pour l'injection de dépendances et la gestion des composants d'application.
