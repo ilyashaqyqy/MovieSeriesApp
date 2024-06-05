@@ -1,6 +1,6 @@
 package com.dao;
 
-import com.model.utulisateur;
+import com.model.Users;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -14,20 +14,28 @@ public class Main {
         // Create the Session
         Session session = factory.openSession();
 
+
         try {
             // Create a user object
-            utulisateur user = new utulisateur();
-            user.setFullname("hamza hamichan");
+            Users users = new Users();
+            users.setNom_user("lfena");
+            users.setPrenom_user("najia");
+            users.setMail_user("mail1");
+            users.setPassword_user("1234");
+
 
             // Start a transaction
             Transaction transaction = session.beginTransaction();
 
+
             // Save the user object
-            session.save(user);
+            session.save(users);
 
             // Commit transaction
             transaction.commit();
             System.out.println("Insertion successful");
+
+            //---------------------------------------------
         } catch (Exception e) {
             System.out.println("Insertion failed: " + e.getMessage());
         } finally {
