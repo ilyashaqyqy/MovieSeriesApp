@@ -58,11 +58,11 @@ La chaîne de télévision internationale MovieSeriesTV a sollicité la startup 
 
 ### diagramme de classe
 
-<img width="551" alt="Daigrame de class" src="https://github.com/ilyashaqyqy/MovieSeriesApp/assets/157011241/15148fb4-8b33-4482-b709-129e3b6fbe61">
+<img width="533" alt="classes" src="https://github.com/ilyashaqyqy/MovieSeriesApp/assets/157011241/ffbf8a1e-688f-40f9-af72-eed030166986">
 
 ### use case
 
-<img width="386" alt="UseCase" src="https://github.com/ilyashaqyqy/MovieSeriesApp/assets/157011241/a39fc4cc-1c98-4bec-8480-982cf0ee657d">
+<img width="430" alt="usecase_modi" src="https://github.com/ilyashaqyqy/MovieSeriesApp/assets/157011241/35be090e-a688-48dd-a71e-5a2344cf7ae1">
 
 ### diagramme de sequence
 
