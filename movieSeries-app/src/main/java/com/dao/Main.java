@@ -1,9 +1,6 @@
 package com.dao;
 
-import com.model.Admin;
-import com.model.Favorie;
-import com.model.Users;
-import com.model.film;
+import com.model.*;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -22,50 +19,26 @@ public class Main {
         // Create the Session
         Session session = factory.openSession();
 
-
+int i ;
         try {
-
             // Create a user object
-            film films = new film();
-            films.setActeur("Acterur film1");
-            films.setCreateur("createurFim1");
+            for (i=0;i<=10;i++) {
+                Users user = new Users();
+                user.setMail_user("mail"+i+"");
+                user.setPrenom_user("prenomUser "+i + "");
+                user.setNom_user("NomUser"+i+"");
+                user.setPassword_user("pass"+i+"");
 
-            DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
-            Date dateDebut = dateFormat.parse("2020/02/02");
-            films.setDate_debut(dateDebut);
-
-
-            DateFormat dateFormat2 = new SimpleDateFormat("yyyy/MM/dd");
-            Date datefin = dateFormat2.parse("2024/04/04");
-            films.setDate_fin(datefin);
-
-            films.setDescription("film_description");
-
-            films.setGenre("genre film1");
-            films.setImage("profile");
-
-            films.setNote("note1");
-            films.setSaison("filmSaison");
-            films.setText("filmText");
+                Transaction transaction = session.beginTransaction();
 
 
-            Admin admin = session.get(Admin.class,1);
-            films.setAdmin(admin);
-            Favorie favorie = session.get(Favorie.class,1);
-            films.setFavorie(favorie);
+                // Save the user object
+                session.save(user);
 
-
-
-            Transaction transaction = session.beginTransaction();
-
-
-            // Save the user object
-            session.save(films);
-
-            // Commit transaction
-            transaction.commit();
-            System.out.println("Insertion successful");
-
+                // Commit transaction
+                transaction.commit();
+                System.out.println("Insertion successful");
+            }
             //---------------------------------------------
         } catch (Exception e) {
             System.out.println("Insertion failed: " + e.getMessage());
