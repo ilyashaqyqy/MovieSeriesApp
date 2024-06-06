@@ -1,5 +1,6 @@
 package com.dao;
 
+import com.model.Favorie;
 import com.model.Users;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -16,12 +17,10 @@ public class Main {
 
 
         try {
+            Users user = session.get(Users.class,1);
             // Create a user object
-            Users users = new Users();
-            users.setNom_user("lfena");
-            users.setPrenom_user("najia");
-            users.setMail_user("mail1");
-            users.setPassword_user("1234");
+            Favorie favorie = new Favorie();
+            favorie.setUser(user);
 
 
             // Start a transaction
@@ -29,7 +28,7 @@ public class Main {
 
 
             // Save the user object
-            session.save(users);
+            session.save(favorie);
 
             // Commit transaction
             transaction.commit();

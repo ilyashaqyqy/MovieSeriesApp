@@ -30,6 +30,8 @@
         <property name="hibernate.hbm2ddl.auto">update</property>
 
         <!-- Names the annotated entity class -->
+        <mapping class="com.model.Favorie"/>
         <mapping class="com.model.Users"/>
+
     </session-factory>
 </hibernate-configuration>
