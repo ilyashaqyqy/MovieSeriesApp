@@ -17,7 +17,11 @@ public class Serie {
     private  String  saison  ;
     private String genre;
     private  String createur;
+    
+    
+    
     private  String acteur;
+    @Column(name = "\"not\"")
     private String not ;
     private String image ;
     @ManyToOne

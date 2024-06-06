@@ -6,9 +6,9 @@
     <session-factory>
         <!-- Database connection settings -->
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
-        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/movies</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/MoviesSerie</property>
         <property name="hibernate.connection.username">postgres</property>
-        <property name="hibernate.connection.password">1234</property>
+        <property name="hibernate.connection.password">azer1234</property>
 
         <!-- JDBC connection pool settings -->
         <property name="hibernate.c3p0.min_size">5</property>
@@ -31,5 +31,10 @@
 
         <!-- Names the annotated entity class -->
         <mapping class="com.model.Users"/>
+        <mapping class="com.model.Serie"/>
+        <mapping class="com.model.Admin"/>
+        <mapping class="com.model.Favorie"/>
+        
+  
     </session-factory>
 </hibernate-configuration>
